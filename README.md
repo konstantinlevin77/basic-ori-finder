@@ -22,8 +22,6 @@ The most critical mutation occurring in the ssDNA state is **deamination**:
 ### Finding the Origin
 Because of this asymmetric mutation rate, one side of the circular chromosome (from the origin to the terminus) becomes "G-rich," while the other becomes "C-rich." 
 
-[Image of GC skew diagram in circular bacterial DNA]
-
 * **The Switch Point:** The $oriC$ is typically found at the point where the $G-C$ difference **reverses its trend**. 
 * **The Algorithm:** This project implements a sliding window algorithm to calculate the **cumulative skew** ($G - C$) across the genome. The $oriC$ is generally located at the **minimum** of this cumulative skew curve, where the lagging strand ends and the leading strand begins.
 
